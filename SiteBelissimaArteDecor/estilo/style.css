@@ -1,0 +1,260 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Dosis', sans-serif;
+}
+
+/** Boot CSS **/
+
+.center{
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+img{
+	width: 100%;
+	max-width: 350px;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.w33{
+	width: 33.3%;
+	padding: 0 10px;
+}
+
+.w50{
+	padding: 0 60px;
+	width: 50%;
+}
+
+.clear{
+	clear: both;
+}
+
+
+/** Estilização do Site **/
+
+header{
+	padding: 20px 0;
+	background: #F39AB9;
+}
+
+header .logo{
+	font-size: 23px;
+	font-weight: 300;
+	color: white;
+}
+
+.mobile{
+	display: none; 
+}
+
+nav.desktop ul{
+	position: relative;
+	top: 6px;
+	list-style-type: none;
+}
+
+nav.desktop li{
+	font-weight: 300;
+	font-size: 15px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+nav.desktop a{
+	color: white;
+	text-decoration: none;
+}
+
+section.banner-principal{
+	width: 100%;
+	height: 600px;
+	background-image: url('../images/petalas-bg.jpg');
+	position: relative;
+	background-size: cover;
+}
+
+
+div.overlay{
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(245,159,188,0.3);
+}
+
+section.banner-principal form{
+	z-index: 2;
+	width: 93%;
+	max-width: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+
+section.banner-principal form h2{
+	color: white;
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+}
+
+section.banner-principal form input[type=email]{
+	width: 100%;
+	height: 66px;
+	margin-top: 10px;
+	background: white;
+	color: #333;
+	font-size: 22px;
+	padding-left: 10px;
+}
+
+section.banner-principal form input[type=submit]{
+	width: 100%;
+	height: 66px;
+	margin-top: 10px;
+	background: #E34675;
+	color: white;
+	font-size: 22px;
+	cursor: pointer;
+	border: 0;
+}
+
+section.sobre{
+	padding: 100px 0;
+}
+
+section.sobre h2{
+	font-size: 28px;
+	font-weight: bold;
+	color: #DACC4E;
+}
+
+section.sobre p{
+	font-size: 16px;
+	color: #E34673;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+section.produtos{
+	padding: 90px 0;
+	background: #E44A78;
+}
+
+div.box-produtos{
+	margin: 40px 0;
+	margin-top: 20px;
+	text-align: center;
+	padding: 0 30px;
+}
+
+div.box-produtos h4{
+	font-weight: 300;
+	color: white;
+	font-size: 25px;
+}
+
+div.box-produtos h3{
+	color: white;
+	font-size: 50px;
+}
+
+div.box-produtos p{
+	color: white;
+	font-size: 15px;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+footer{
+	background-image: url('../images/petalas-bg.jpg');
+	padding: 10px 0;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 768px){
+	img{
+		float: none !important;
+		display: block;
+		margin:0 auto;
+	}
+
+	.w50{
+		padding: 20px;
+		width: 100%;
+	}
+
+	.w33{
+		padding: 20px;
+		width: 100%;
+	}
+
+	.box-produtos{
+		padding: 40px 20px;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 700px){
+	nav.desktop{
+		display: none;
+	}
+
+	nav.mobile{
+		display: block;
+	}
+
+	.botao-menu-mobile{
+		font-size: 24px;
+		cursor: pointer;
+		color: white;
+	}
+
+	nav.mobile ul{
+		top: 55px;
+		z-index: 3;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		display: none;
+	}
+
+	nav.mobile li{
+		font-weight: 300;
+		width: 100%;
+		display: block;
+		background: white;
+		border-bottom:1px solid #ccc;
+		font-size: 17px;
+		padding: 8px 0;
+	}
+
+	nav.mobile li a{
+		display: block;
+		color: #444;
+		text-decoration: none;
+	}
+}
